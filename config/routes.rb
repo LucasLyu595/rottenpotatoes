@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  # Dummy
+  resources :movies
+  root :to => redirect('/movies')
+
+  # resources:movies, except: [:index]
 end
